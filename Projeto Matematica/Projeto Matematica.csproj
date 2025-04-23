@@ -64,6 +64,12 @@
     <Compile Include="ParOuImpar.Designer.cs">
       <DependentUpon>ParOuImpar.cs</DependentUpon>
     </Compile>
+    <Compile Include="PositivoNegativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PositivoNegativo.Designer.cs">
+      <DependentUpon>PositivoNegativo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Abertura.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ParOuImpar.resx">
       <DependentUpon>ParOuImpar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositivoNegativo.resx">
+      <DependentUpon>PositivoNegativo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\parouimpar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\positivonegativo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

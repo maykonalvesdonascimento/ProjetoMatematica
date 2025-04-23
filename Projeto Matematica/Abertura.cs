@@ -36,5 +36,12 @@ namespace Projeto_Matematica
             parImpar.Show();
             Hide();
         }
+
+        private void radPositivoNegativo_CheckedChanged(object sender, EventArgs e)
+        {
+            PositivoNegativo positivonegatovo = new PositivoNegativo();
+            positivonegatovo.Show();
+            Hide();
+        }
     }
 }

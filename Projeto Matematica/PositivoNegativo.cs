@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Projeto_Matematica
+{
+    public partial class PositivoNegativo: Form
+    {
+        public PositivoNegativo()
+        {
+            InitializeComponent();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Abertura abertura = new Abertura();
+            abertura.Show();
+            Hide();
+        }
+    }
+}

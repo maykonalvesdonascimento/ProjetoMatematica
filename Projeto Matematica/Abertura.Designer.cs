@@ -102,6 +102,7 @@
             this.radPositivoNegativo.TabIndex = 4;
             this.radPositivoNegativo.Text = "POSITIVO OU NEGATIVO";
             this.radPositivoNegativo.UseVisualStyleBackColor = false;
+            this.radPositivoNegativo.CheckedChanged += new System.EventHandler(this.radPositivoNegativo_CheckedChanged);
             // 
             // radEleicao
             // 
