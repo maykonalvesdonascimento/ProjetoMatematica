@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Projeto_Matematica
 {
-    public partial class Form1: Form
+    public partial class Dobro: Form
     {
-        public Form1()
+        public Dobro()
         {
             InitializeComponent();
+        }
+
+        private void btnfechar_Click(object sender, EventArgs e)
+        {
+
+            Abertura abertura = new Abertura();
+            abertura.Show();
+            this.Close();
+
+
         }
     }
 }
