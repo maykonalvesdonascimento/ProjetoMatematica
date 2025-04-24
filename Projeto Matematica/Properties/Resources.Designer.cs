@@ -83,6 +83,26 @@ namespace Projeto_Matematica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chevron_stripes_geometric_lines_1409_8687 {
+            get {
+                object obj = ResourceManager.GetObject("chevron_stripes_geometric_lines_1409_8687", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lixo {
+            get {
+                object obj = ResourceManager.GetObject("lixo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap parouimpar {
             get {
                 object obj = ResourceManager.GetObject("parouimpar", resourceCulture);
@@ -96,6 +116,26 @@ namespace Projeto_Matematica.Properties {
         internal static System.Drawing.Bitmap positivonegativo {
             get {
                 object obj = ResourceManager.GetObject("positivonegativo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seta1 {
+            get {
+                object obj = ResourceManager.GetObject("seta1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seta2 {
+            get {
+                object obj = ResourceManager.GetObject("seta2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

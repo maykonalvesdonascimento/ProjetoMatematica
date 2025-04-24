@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AntecessorSucessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AntecessorSucessor.Designer.cs">
+      <DependentUpon>AntecessorSucessor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dobro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Abertura.resx">
       <DependentUpon>Abertura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AntecessorSucessor.resx">
+      <DependentUpon>AntecessorSucessor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dobro.resx">
       <DependentUpon>Dobro.cs</DependentUpon>
@@ -118,6 +127,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\positivonegativo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lixo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron-stripes-geometric-lines_1409-8687.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
