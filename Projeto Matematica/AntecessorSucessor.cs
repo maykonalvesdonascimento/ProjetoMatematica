@@ -23,5 +23,99 @@ namespace Projeto_Matematica
             abertura.Show();
             Hide();
         }
+
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13) {
+                if (int.TryParse(txtNumero.Text, out int numero))
+                {
+                    lblantecessor.Text = (numero-1).ToString();
+                    lblsucessor.Text = (numero+1).ToString();   
+
+                }
+                else {
+
+
+                    limpezaTXT(false);
+                }
+            
+            }
+        }
+
+        private void btnAntecessor_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtNumero.Text))
+            {
+                if (int.TryParse(txtNumero.Text, out int numero))
+                {
+
+                    SucessorOuAntecessor(numero, true);
+                }
+                else
+                {
+
+
+                    limpezaTXT(false);
+
+
+                }
+             
+            }
+            else {
+                limpezaTXT(false);
+            }
+        }
+
+        private void btnSucessor_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtNumero.Text))
+            {
+                if (int.TryParse(txtNumero.Text, out int numero))
+                {
+                    SucessorOuAntecessor(numero, false);
+                }
+                else
+                {
+
+                    limpezaTXT(false);
+
+
+                }
+               
+            }
+            else
+            {
+                limpezaTXT(false);
+            }
+        }
+
+        public void SucessorOuAntecessor(int numero , bool antecessor) {
+            if (antecessor)
+            {
+                numero = numero - 1;
+            }
+            else {
+                numero = numero + 1;
+            }
+            txtNumero.Text = numero.ToString();
+            lblantecessor.Text = (numero - 1).ToString();
+            lblsucessor.Text = (numero + 1).ToString();
+        }
+
+        public void limpezaTXT(bool botao) {
+            if (!botao)
+            {
+                MessageBox.Show("Digite um número válido");
+            }
+            txtNumero.Clear();
+            txtNumero.Focus();
+            lblantecessor.Text = "?";
+            lblsucessor.Text = "?";
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            limpezaTXT(true);
+        }
     }
 }

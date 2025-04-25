@@ -140,5 +140,11 @@
   <ItemGroup>
     <None Include="Resources\seta2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setadireita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setaesquerda.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

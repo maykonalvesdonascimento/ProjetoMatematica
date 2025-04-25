@@ -142,4 +142,10 @@
   <data name="seta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seta2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="setadireita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setadireita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setaesquerda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setaesquerda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
