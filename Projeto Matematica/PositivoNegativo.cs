@@ -23,5 +23,33 @@ namespace Projeto_Matematica
             abertura.Show();
             Hide();
         }
+
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13) {
+                if (int.TryParse(txtNumero.Text, out int numero))
+                {
+                    if (numero < 0)
+                    {
+                        MessageBox.Show($"Número {txtNumero.Text} é Negativo");
+                    }
+                    else if (numero == 0)
+                    {
+                        MessageBox.Show($"Número{txtNumero.Text} é Neutro");
+                    }
+                    else {
+                        MessageBox.Show($"Número{txtNumero.Text} é Positivo");
+                    }
+                    txtNumero.Clear();
+                    txtNumero.Focus();
+
+
+                }
+                else {
+                    MessageBox.Show("Digite um número válido");
+                
+                }
+            }
+        }
     }
 }

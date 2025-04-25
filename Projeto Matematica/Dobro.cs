@@ -35,11 +35,14 @@ namespace Projeto_Matematica
                 {
                     int dobro = numero * 2;
                     MessageBox.Show($"Dobro de {txtNumero.Text} é {dobro}");
+                    txtNumero.Clear();
+                    txtNumero.Focus();
                 }
                 else {
                     MessageBox.Show("Digite um Número Válido");
                 
                 }
+
 
                 }
             }

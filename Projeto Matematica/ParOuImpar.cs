@@ -33,14 +33,15 @@ namespace Projeto_Matematica
                     if (numero % 2 == 0)
                     {
                         MessageBox.Show($"Número {txtNumero.Text} é Par");
-                        txtNumero.Clear();
+                   
                     }
                     else
                     {
                         MessageBox.Show($"Número {txtNumero.Text} é Impar");
-                        txtNumero.Clear();
+                     
                     }
-
+                    txtNumero.Clear();
+                    txtNumero.Focus();
                 }
                 else
                 {
