@@ -23,5 +23,32 @@ namespace Projeto_Matematica
             abertura.Show();
             this.Close();
         }
+
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                if (int.TryParse(txtNumero.Text, out int numero))
+                {
+                    if (numero % 2 == 0)
+                    {
+                        MessageBox.Show($"Número {txtNumero.Text} é Par");
+                        txtNumero.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Número {txtNumero.Text} é Impar");
+                        txtNumero.Clear();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Digite um número Válido");
+                }
+
+            }
+            
+        }
     }
 }
