@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.btnfechar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -55,12 +55,13 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Digite um Número";
             // 
-            // textBox1
+            // txtNumero
             // 
-            this.textBox1.Location = new System.Drawing.Point(276, 146);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtNumero.Location = new System.Drawing.Point(276, 146);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(139, 20);
+            this.txtNumero.TabIndex = 2;
+            this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
             // 
             // btnfechar
             // 
@@ -83,7 +84,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnfechar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -99,7 +100,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Button btnfechar;
     }
 }

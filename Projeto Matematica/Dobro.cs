@@ -26,5 +26,22 @@ namespace Projeto_Matematica
 
 
         }
+
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13) {
+
+                if (int.TryParse(txtNumero.Text, out int numero))
+                {
+                    int dobro = numero * 2;
+                    MessageBox.Show($"Dobro de {txtNumero.Text} é {dobro}");
+                }
+                else {
+                    MessageBox.Show("Digite um Número Válido");
+                
+                }
+
+                }
+            }
     }
 }
