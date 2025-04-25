@@ -43,5 +43,12 @@ namespace Projeto_Matematica
             positivonegatovo.Show();
             Hide();
         }
+
+        private void radAntecessorSucessor_CheckedChanged(object sender, EventArgs e)
+        {
+			AntecessorSucessor antecessorSucessor = new AntecessorSucessor();
+			antecessorSucessor.Show();
+			Hide();
+		}
     }
 }
