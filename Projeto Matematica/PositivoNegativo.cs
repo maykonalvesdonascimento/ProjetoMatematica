@@ -27,8 +27,8 @@ namespace Projeto_Matematica
         private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
         {
 
-            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
+			if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar) && !(e.KeyChar == '-'))
+			{
                 e.Handled = true;
                 MessageBox.Show("Só é Permitido Digitar Números!!!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
