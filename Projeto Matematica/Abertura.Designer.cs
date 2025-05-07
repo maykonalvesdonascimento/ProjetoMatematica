@@ -141,6 +141,7 @@
             this.radTema.TabIndex = 7;
             this.radTema.Text = "TEMA";
             this.radTema.UseVisualStyleBackColor = false;
+            this.radTema.CheckedChanged += new System.EventHandler(this.radTema_CheckedChanged);
             // 
             // btnFechar
             // 

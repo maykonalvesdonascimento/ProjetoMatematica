@@ -52,6 +52,12 @@
     <Compile Include="AntecessorSucessor.Designer.cs">
       <DependentUpon>AntecessorSucessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Area.Designer.cs">
+      <DependentUpon>Area.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calculadora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AntecessorSucessor.resx">
       <DependentUpon>AntecessorSucessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Area.resx">
+      <DependentUpon>Area.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calculadora.resx">
       <DependentUpon>Calculadora.cs</DependentUpon>
@@ -157,6 +166,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\backgroundcalc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundTema.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forma1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forma2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forma3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forma4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forma5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forma6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

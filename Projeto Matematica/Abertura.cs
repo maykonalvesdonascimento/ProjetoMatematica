@@ -57,5 +57,12 @@ namespace Projeto_Matematica
             calc.Show();
             Hide();
         }
+
+        private void radTema_CheckedChanged(object sender, EventArgs e)
+        {
+            Area area = new Area();
+            area.Show();
+            Hide();
+        }
     }
 }
