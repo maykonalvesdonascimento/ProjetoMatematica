@@ -83,6 +83,16 @@ namespace Projeto_Matematica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgroundcalc {
+            get {
+                object obj = ResourceManager.GetObject("backgroundcalc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chevron_stripes_geometric_lines_1409_8687 {
             get {
                 object obj = ResourceManager.GetObject("chevron_stripes_geometric_lines_1409_8687", resourceCulture);

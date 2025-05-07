@@ -50,5 +50,12 @@ namespace Projeto_Matematica
 			antecessorSucessor.Show();
 			Hide();
 		}
+
+        private void radCalculadora_CheckedChanged(object sender, EventArgs e)
+        {
+            Calculadora calc = new Calculadora();
+            calc.Show();
+            Hide();
+        }
     }
 }
