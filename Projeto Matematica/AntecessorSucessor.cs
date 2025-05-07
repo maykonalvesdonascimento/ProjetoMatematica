@@ -40,7 +40,7 @@ namespace Projeto_Matematica
                 }
                 else {
 
-                    
+
                     limpezaTXT(false);
                 }
             
