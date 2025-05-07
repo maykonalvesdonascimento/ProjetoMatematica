@@ -40,7 +40,7 @@
             this.lblValor2 = new System.Windows.Forms.Label();
             this.txtValor1 = new System.Windows.Forms.TextBox();
             this.txtValor2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
             this.txtValor3 = new System.Windows.Forms.TextBox();
             this.lblValor3 = new System.Windows.Forms.Label();
@@ -183,16 +183,16 @@
             this.txtValor2.Visible = false;
             this.txtValor2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor2_KeyPress);
             // 
-            // label1
+            // lblResultado
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(539, 343);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Área:";
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.BackColor = System.Drawing.Color.Transparent;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(539, 343);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(44, 16);
+            this.lblResultado.TabIndex = 6;
+            this.lblResultado.Text = "Área:";
             // 
             // btnFechar
             // 
@@ -239,7 +239,7 @@
             this.Controls.Add(this.txtValor3);
             this.Controls.Add(this.lblValor3);
             this.Controls.Add(this.btnFechar);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.txtValor2);
             this.Controls.Add(this.txtValor1);
             this.Controls.Add(this.lblValor2);
@@ -272,7 +272,7 @@
         private System.Windows.Forms.Label lblValor2;
         private System.Windows.Forms.TextBox txtValor1;
         private System.Windows.Forms.TextBox txtValor2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.TextBox txtValor3;
         private System.Windows.Forms.Label lblValor3;

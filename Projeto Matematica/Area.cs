@@ -12,7 +12,10 @@ namespace Projeto_Matematica
 {
     public partial class Area : Form
     {
-        string[,] lados = { {"Lado", "Lado",""}, {"Altura","Base","" } , { "Altura", "Base","" },{ "Base Maior","Base Menor", "Altura"}, { "Diagonal Maior","Diagonal Menor",""}, {"Raio","","" } };
+        string[,] lados = { { "Lado", "Lado", "" }, { "Altura", "Base", "" }, { "Altura", "Base", "" }, { "Base Maior", "Base Menor", "Altura" }, { "Diagonal Maior", "Diagonal Menor", "" }, { "Raio", "", "" } };
+        int qtdCampos;
+        int formaEscolhida;
+
         public Area()
         {
             InitializeComponent();
@@ -28,6 +31,8 @@ namespace Projeto_Matematica
         {
 
             limpar();
+            qtdCampos = campos;
+            formaEscolhida = forma;
 
             string imagemForma = "forma" + (forma + 1).ToString();
             var imagem = (Image)Properties.Resources.ResourceManager.GetObject(imagemForma);
@@ -53,8 +58,9 @@ namespace Projeto_Matematica
 
         }
 
-        public void limpar() {
-            txtValor1.Visible=false;
+        public void limpar()
+        {
+            txtValor1.Visible = false;
             txtValor2.Visible = false;
             txtValor3.Visible = false;
             lblValor1.Visible = false;
@@ -63,6 +69,7 @@ namespace Projeto_Matematica
             txtValor1.Text = "0";
             txtValor2.Text = "0";
             txtValor3.Text = "0";
+            lblResultado.Text = "Área:";
         }
 
         private void radForma1_CheckedChanged(object sender, EventArgs e)
@@ -97,18 +104,94 @@ namespace Projeto_Matematica
         private void txtValor1_KeyPress(object sender, KeyPressEventArgs e)
         {
             Program.IntNumber(e);
+
+            if (e.KeyChar == 13)
+            {
+                if (qtdCampos == 1)
+                {
+                    if (double.TryParse(txtValor1.Text, out double numero))
+                    {
+                        double area;
+                        if (formaEscolhida == 0)
+                        {
+                            area = numero * numero;
+                        }
+                        else
+                        {
+                            area = 3.14 * (numero * numero);
+                        }
+
+                        lblResultado.Text = $"Área: {area}";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro Número inválido");
+                    }
+
+                }
+                else
+                {
+                    txtValor2.Focus();
+                }
+            }
         }
 
         private void txtValor2_KeyPress(object sender, KeyPressEventArgs e)
         {
             Program.IntNumber(e);
+
+            if (e.KeyChar == 13)
+            {
+                if (qtdCampos == 2)
+                {
+                    double area;
+                    if (double.TryParse(txtValor1.Text, out double numero1) && double.TryParse(txtValor2.Text, out double numero2))
+                    {
+
+
+                        if (formaEscolhida == 1 || formaEscolhida == 4)
+                        {
+                            area = (numero1 * numero2) / 2;
+
+                            
+                        }
+                        else { 
+                            area = numero1 * numero2;
+                        
+                        }
+                        lblResultado.Text = $"Área: {area}";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro Número inválido");
+                    }
+               
+                   
+                }
+                else
+                {
+                    txtValor3.Focus();
+                }
+            }
         }
 
         private void txtValor3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Program.IntNumber(e);
+            if ((double.TryParse(txtValor1.Text, out double baseMaior)) && (double.TryParse(txtValor2.Text, out double baseMenor)) && (double.TryParse(txtValor3.Text, out double altura)))
+            {
+                double area = ((baseMaior + baseMenor) * altura) / 2;
+
+                lblResultado.Text = $"Área: {area}";
+
+            }
+            else {
+                MessageBox.Show("Erro Número inválido");
+
+            }
+                Program.IntNumber(e);
         }
 
 
     }
+    
 }
