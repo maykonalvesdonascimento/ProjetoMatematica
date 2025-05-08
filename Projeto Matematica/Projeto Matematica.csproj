@@ -76,6 +76,12 @@
     <Compile Include="Abertura.Designer.cs">
       <DependentUpon>Abertura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mes.Designer.cs">
+      <DependentUpon>Mes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParOuImpar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dobro.resx">
       <DependentUpon>Dobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mes.resx">
+      <DependentUpon>Mes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParOuImpar.resx">
       <DependentUpon>ParOuImpar.cs</DependentUpon>

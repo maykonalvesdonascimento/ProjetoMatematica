@@ -78,6 +78,7 @@
             this.radMes.TabIndex = 2;
             this.radMes.Text = "MÊS";
             this.radMes.UseVisualStyleBackColor = false;
+            this.radMes.CheckedChanged += new System.EventHandler(this.radMes_CheckedChanged);
             // 
             // radParImpar
             // 

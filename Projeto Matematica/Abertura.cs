@@ -64,5 +64,12 @@ namespace Projeto_Matematica
             area.Show();
             Hide();
         }
+
+        private void radMes_CheckedChanged(object sender, EventArgs e)
+        {
+            Mes mes = new Mes();
+            mes.Show();
+            Hide() ;
+        }
     }
 }
