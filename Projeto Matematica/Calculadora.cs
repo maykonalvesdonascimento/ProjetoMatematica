@@ -25,6 +25,7 @@ namespace Projeto_Matematica
        
         public Calculadora()
         {
+            
             InitializeComponent();
         }
 
@@ -86,12 +87,17 @@ namespace Projeto_Matematica
 
         private void btnC_Click(object sender, EventArgs e)
         {
-            txtResultado.Text="0";
+            limpar();
+
+        }
+
+        public void limpar() {
+            txtResultado.Text = "0";
             vazio = true;
             numero1 = 0;
             resultado = 0;
-            virgula= 0;
-
+            virgula = 0;
+            naoRepetido = false;
         }
 
         private void btnSomar_Click(object sender, EventArgs e)
@@ -118,22 +124,7 @@ namespace Projeto_Matematica
         private void btnEnter_Click(object sender, EventArgs e)
         {
 
-            if (op == "+")
-            {
-                operacoes("+");
-            }
-            else if (op == "-")
-            {
-                operacoes("-");
-            }
-            else if (op == "*")
-            {
-                operacoes("*");
-            }
-            else if (op == "/")
-            {
-                operacoes("/");
-            }
+            enviar();
 
         }
 
@@ -145,7 +136,6 @@ namespace Projeto_Matematica
                 {
                     op = operacao;
                     numero1 = numero;
-                    resultado = 0;
                     naoRepetido = true;
                     virgula = 0;
 
@@ -274,6 +264,71 @@ namespace Projeto_Matematica
                 virgula++;
 
             }
+        }
+
+        public void enviar() {
+            if (op == "+")
+            {
+                operacoes("+");
+            }
+            else if (op == "-")
+            {
+                operacoes("-");
+            }
+            else if (op == "*")
+            {
+                operacoes("*");
+            }
+            else if (op == "/")
+            {
+                operacoes("/");
+            }
+        }
+
+        private void Calculadora_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            for (int i = 0; i < 10; i++) {
+                if (e.KeyChar == (char)(48+i))
+                {
+                   
+                    pressionarBotoes($"{i}");
+                }
+
+              
+
+            }
+            if (e.KeyChar == '+') {
+                operacoes("+");
+            }
+            if (e.KeyChar == '-') {
+                operacoes("-");
+            }
+            if (e.KeyChar == '*')
+            {
+                operacoes("*");
+            }
+            if (e.KeyChar == '/')
+            {
+                operacoes("/");
+            }
+
+            if (e.KeyChar == 8)
+            {
+                limpar();
+            }
+            if (e.KeyChar == ',' || e.KeyChar=='.')
+            {
+                if (virgula == 0)
+                {
+
+                    txtResultado.Text = txtResultado.Text + ",";
+
+                    virgula++;
+
+                }
+            }
+    
         }
     }
 }

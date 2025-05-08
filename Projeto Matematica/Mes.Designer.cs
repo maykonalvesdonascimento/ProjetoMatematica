@@ -63,9 +63,11 @@
             this.calendar1.Location = new System.Drawing.Point(18, 68);
             this.calendar1.Margin = new System.Windows.Forms.Padding(0);
             this.calendar1.MaxDate = new System.DateTime(2025, 1, 31, 0, 0, 0, 0);
+            this.calendar1.MaxSelectionCount = 1;
             this.calendar1.MinDate = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
             this.calendar1.Name = "calendar1";
             this.calendar1.ShowToday = false;
+            this.calendar1.ShowTodayCircle = false;
             this.calendar1.TabIndex = 0;
             this.calendar1.TabStop = false;
             // 

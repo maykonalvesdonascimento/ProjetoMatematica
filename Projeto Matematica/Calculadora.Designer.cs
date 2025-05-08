@@ -56,7 +56,7 @@
             this.txtResultado.Location = new System.Drawing.Point(118, 72);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(168, 20);
-            this.txtResultado.TabIndex = 0;
+            this.txtResultado.TabIndex = 1;
             this.txtResultado.Text = "0";
             // 
             // btn1
@@ -178,7 +178,7 @@
             this.btnEnter.Location = new System.Drawing.Point(248, 312);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(55, 116);
-            this.btnEnter.TabIndex = 12;
+            this.btnEnter.TabIndex = 0;
             this.btnEnter.Text = "Enter";
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
@@ -282,9 +282,11 @@
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.txtResultado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "Calculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Calculadora_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
