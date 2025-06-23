@@ -76,6 +76,12 @@
     <Compile Include="Abertura.Designer.cs">
       <DependentUpon>Abertura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Eleicoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eleicoes.Designer.cs">
+      <DependentUpon>Eleicoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dobro.resx">
       <DependentUpon>Dobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eleicoes.resx">
+      <DependentUpon>Eleicoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mes.resx">
       <DependentUpon>Mes.cs</DependentUpon>
@@ -196,6 +205,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\forma6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper eleicoes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
